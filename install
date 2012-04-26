@@ -1,0 +1,15 @@
+#!/bin/sh -v
+
+rm -rf ~/.vim*
+
+mkdir -p ~/.vim/tmp/backup
+mkdir -p ~/.vim/tmp/swap
+
+cp -r ./snippets ~/.vim/snippets
+
+cp ./vimrc ~/.vimrc
+cp ./gvimrc ~/.gvimrc
+
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+vim +BundleInstall +qall

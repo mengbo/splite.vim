@@ -1,0 +1,11 @@
+snippet cat>
+abbr cat > << EOF EOF
+	cat > ${1:filename} << EOF
+	${2}
+	EOF
+
+snippet cat>>
+abbr cat >> << EOF EOF
+	cat >> ${1:filename} << EOF
+	${2}
+	EOF

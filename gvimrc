@@ -1,0 +1,38 @@
+" Meng Bo's gvimrc file.
+" The commands in this are executed when the GUI is started.
+"
+" Maintainer:	Meng Bo <mengbo@lnu.edu.cn>
+" Last change:	2012/04/10
+"
+" Source a example configuration file if available
+if filereadable("/usr/share/vim/vimcurrent/gvimrc_example.vim")
+  source /usr/share/vim/vimcurrent/gvimrc_example.vim
+endif
+
+
+
+" For GTK2 GUI
+if has ("gui_gtk2")
+  " Overriding the default font
+  set guifont=Bitstream\ Vera\ Sans\ Mono\ 14
+
+  " Use tiny toolbar icons
+  set toolbariconsize=tiny
+
+endif
+
+" For Mac
+if has ("gui_macvim")
+  " Overriding the default font
+  set guifont=Monaco:h14
+
+endif
+
+
+" Change the window size
+set lines=32
+set columns=100
+
+
+" Disable the toolbar
+"set guioptions-=T
