@@ -14,7 +14,7 @@ endif
 " For GTK2 GUI
 if has ("gui_gtk2")
   " Overriding the default font
-  set guifont=Bitstream\ Vera\ Sans\ Mono\ 14
+  set guifont=Ubuntu\ mono\ 14
 
   " Use tiny toolbar icons
   set toolbariconsize=tiny
