@@ -24,7 +24,12 @@ endif
 " For Mac
 if has ("gui_macvim")
   " Overriding the default font
-  set guifont=Monaco:h14
+  set guifont=Monaco:h15
+
+  " Set the input method
+  set noimd
+  set imi=2
+  set ims=2
 
 endif
 
