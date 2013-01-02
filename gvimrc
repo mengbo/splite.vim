@@ -5,8 +5,8 @@
 " Last change:	2012/04/10
 "
 " Source a example configuration file if available
-if filereadable("/usr/share/vim/vimcurrent/gvimrc_example.vim")
-  source /usr/share/vim/vimcurrent/gvimrc_example.vim
+if filereadable("/usr/share/vim/vim73/gvimrc_example.vim")
+  source /usr/share/vim/vim73/gvimrc_example.vim
 endif
 
 
