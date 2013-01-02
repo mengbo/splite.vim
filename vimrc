@@ -4,8 +4,8 @@
 " Last change:	2012/04/10
 "
 " Source a example configuration file if available
-if filereadable("/usr/share/vim/vimcurrent/vimrc_example.vim")
-  source /usr/share/vim/vimcurrent/vimrc_example.vim
+if filereadable("/usr/share/vim/vim73/vimrc_example.vim")
+  source /usr/share/vim/vim73/vimrc_example.vim
 endif
 
 
@@ -108,8 +108,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-rails'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neocomplcache-snippets-complete'
+Bundle 'Shougo/neocomplcache.git'
+Bundle 'Shougo/neosnippet.git'
 Bundle 'ujihisa/neco-ruby'
 
 filetype plugin indent on     " required!
@@ -201,5 +201,20 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+
 " Load my snippets
-let g:neocomplcache_snippets_dir = '$HOME/.vim/snippets'
+let g:neosnippet#snippets_directory = '$HOME/.vim/snippets'
