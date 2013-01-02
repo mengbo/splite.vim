@@ -202,6 +202,8 @@ let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 
+" Neosnippet
+"
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -214,7 +216,6 @@ smap <expr><TAB> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" 
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
-
 
 " Load my snippets
 let g:neosnippet#snippets_directory = '$HOME/.vim/snippets'
