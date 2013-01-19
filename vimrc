@@ -111,6 +111,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'Shougo/neocomplcache.git'
 Bundle 'Shougo/neosnippet.git'
 Bundle 'ujihisa/neco-ruby'
+Bundle 'mengbo/vim-dash'
 
 filetype plugin indent on     " required!
 "
