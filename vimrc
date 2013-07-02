@@ -72,7 +72,7 @@ if has("autocmd")
         \ setlocal tabstop=4 | setlocal shiftwidth=4 | setlocal expandtab
   autocmd FileType java
         \ setlocal tabstop=4 | setlocal shiftwidth=4 | setlocal noexpandtab
-  autocmd FileType xml,html,xhtml,css,javascript,ruby,eruby
+  autocmd FileType xml,html,xhtml,css,yaml,javascript,ruby,eruby
         \ setlocal tabstop=2 | setlocal shiftwidth=2 | setlocal expandtab
 
   " Config Ruby completion
@@ -112,6 +112,7 @@ Bundle 'Shougo/neocomplcache.git'
 Bundle 'Shougo/neosnippet.git'
 Bundle 'ujihisa/neco-ruby'
 Bundle 'mengbo/vim-dash'
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on     " required!
 "
