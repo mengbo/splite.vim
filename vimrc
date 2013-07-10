@@ -99,7 +99,8 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'pangloss/vim-javascript'
