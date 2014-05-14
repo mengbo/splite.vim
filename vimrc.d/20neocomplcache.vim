@@ -1,5 +1,7 @@
 " Neocomplcache
 "
+Plugin 'Shougo/neocomplcache.git'
+Plugin 'Shougo/neosnippet.git'
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
