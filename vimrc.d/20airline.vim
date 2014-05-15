@@ -4,7 +4,7 @@ Plugin 'bling/vim-airline'
 " Last window will always have a status line
 set laststatus=2
 " Change the theme to light
-let g:airline_theme='light'
+"let g:airline_theme='light'
 " Unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
