@@ -1,9 +1,4 @@
 if has('gui_running')
-  " Use the English menus
-  set langmenu=none
-  source $VIMRUNTIME/delmenu.vim
-  source $VIMRUNTIME/menu.vim
-
   " Overriding the default font for Linux
   if has ("gui_gtk2")
     set guifont=Ubuntu\ mono\ 14
@@ -13,6 +8,11 @@ if has('gui_running')
   if has ("gui_macvim")
     set guifont=Monaco:h15
   endif
+
+  " Use the English menus
+  set langmenu=none
+  source $VIMRUNTIME/delmenu.vim
+  source $VIMRUNTIME/menu.vim
 
   " Use tiny toolbar icons for Linux
   if has ("gui_gtk2")
