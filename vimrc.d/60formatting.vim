@@ -10,6 +10,9 @@ set fileformat=unix
 " Set the end-of-line formats that will be tried
 set fileformats=unix,dos
 
+" For all text files set 'textwidth' to 78 characters.
+autocmd FileType text setlocal textwidth=78
+
 " Set indent by FileType
 autocmd FileType vim
       \ setlocal tabstop=2 | setlocal shiftwidth=2 | setlocal expandtab
