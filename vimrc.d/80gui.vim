@@ -17,15 +17,19 @@ if has('gui_running')
   " Disable the toolbar
   "set guioptions-=T
 
+  " Disable the scroll bar
+  set guioptions-=r
+
   " Change the window size
   set lines=32
   set columns=100
   
   " Set the input method for Mac
   if has ("gui_macvim")
-    set noimd
-    set imi=2
-    set ims=2
+    set noimdisable
+    set imsearch=0
+    autocmd! InsertLeave * set imdisable | set iminsert=0
+    autocmd! InsertEnter * set noimdisable | set iminsert=0
   endif
 
 endif
