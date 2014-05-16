@@ -19,15 +19,6 @@ set wildmenu
 " Last line in a window will be displayed
 set display=lastline
 
-" do incremental searching
-set incsearch
-
-" Do case insensitive matching
-set ignorecase
-
-" Do smart case matching
-set smartcase
-
 " Match the width of glyphs in the CJK font
 set ambiwidth=double
 
