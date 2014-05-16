@@ -8,7 +8,7 @@ if filereadable(expand("~/.vim/before.vimrc"))
   source ~/.vim/before.vimrc
 endif
 
-" Source all of the .vim files in ~/.vimrc.d directory.
+" Source all of the .vim files in ~/.vim/vimrc.d directory.
 for file in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
     exe 'source' file
 endfor
