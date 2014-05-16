@@ -1,8 +1,3 @@
-" Use the English menus
-set langmenu=none
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
