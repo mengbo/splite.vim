@@ -1,0 +1,1 @@
+Plugin 'bling/vim-bufferline'
