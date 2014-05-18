@@ -30,11 +30,13 @@ if has('gui_running')
   set columns=100
   
   " Set the input method for Mac
+  " Open MacVim --> Preferences disable "Draw marked text inline"
   if has ("gui_macvim")
     set noimdisable
     set imsearch=0
     autocmd! InsertLeave * set imdisable | set iminsert=0
     autocmd! InsertEnter * set noimdisable | set iminsert=0
+    autocmd! CompleteDone * set imdisable| set iminsert=0
   endif
 
 endif
