@@ -1,4 +1,4 @@
-Plugin 'chase/vim-ansible-yaml'
+Plugin 'tpope/vim-haml'
 
-autocmd FileType yaml
+autocmd FileType haml
       \ setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
