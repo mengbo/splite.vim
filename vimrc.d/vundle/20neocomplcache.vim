@@ -1,7 +1,14 @@
+if exists("g:vundle_install_plugin")
+  Plugin 'Shougo/neocomplcache'
+  Plugin 'Shougo/neosnippet'
+  Plugin 'Shougo/neosnippet-snippets'
+  Plugin 'honza/vim-snippets'
+  finish
+endif
+
+
 " Neocomplcache
 "
-Plugin 'Shougo/neocomplcache'
-
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -103,9 +110,6 @@ let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " Neosnippet
 "
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
-
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -123,11 +127,6 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
-
-
-" Vim-snippets
-"
-Plugin 'honza/vim-snippets'
 
 
 " Load my snippets

@@ -1,3 +1,7 @@
+if exists("g:vundle_install_plugin")
+  finish
+endif
+
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 autocmd FileType xml

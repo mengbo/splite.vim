@@ -1,4 +1,7 @@
-Plugin 'wavded/vim-stylus'
+if exists("g:vundle_install_plugin")
+  Plugin 'wavded/vim-stylus'
+  finish
+endif
 
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 

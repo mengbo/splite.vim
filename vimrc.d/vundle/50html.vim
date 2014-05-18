@@ -1,4 +1,7 @@
-Plugin 'amirh/HTML-AutoCloseTag'
+if exists("g:vundle_install_plugin")
+  Plugin 'amirh/HTML-AutoCloseTag'
+  finish
+endif
 
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 

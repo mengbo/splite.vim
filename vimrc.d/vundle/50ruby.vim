@@ -1,8 +1,11 @@
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'ecomba/vim-ruby-refactoring'
-Plugin 'ujihisa/neco-ruby'
+if exists("g:vundle_install_plugin")
+  Plugin 'vim-ruby/vim-ruby'
+  Plugin 'tpope/vim-rails'
+  Plugin 'tpope/vim-rake'
+  Plugin 'ecomba/vim-ruby-refactoring'
+  Plugin 'ujihisa/neco-ruby'
+  finish
+endif
 
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd FileType ruby let g:rubycomplete_buffer_loading = 1

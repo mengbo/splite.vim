@@ -1,5 +1,9 @@
-" Airline
-Plugin 'bling/vim-airline'
+if exists("g:vundle_install_plugin")
+  Plugin 'bling/vim-airline'
+  finish
+endif
+
+
 " Last window will always have a status line
 set laststatus=2
 " Change the theme

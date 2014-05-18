@@ -1,4 +1,8 @@
-Plugin 'altercation/vim-colors-solarized'
+if exists("g:vundle_install_plugin")
+  Plugin 'altercation/vim-colors-solarized'
+  finish
+endif
+
 
 syntax enable
 if has('gui_running')

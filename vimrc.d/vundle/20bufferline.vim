@@ -1,1 +1,4 @@
-Plugin 'bling/vim-bufferline'
+if exists("g:vundle_install_plugin")
+  Plugin 'bling/vim-bufferline'
+  finish
+endif

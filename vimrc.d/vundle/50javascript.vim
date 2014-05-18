@@ -1,5 +1,8 @@
-Plugin 'pangloss/vim-javascript'
-Plugin 'elzr/vim-json'
+if exists("g:vundle_install_plugin")
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'elzr/vim-json'
+  finish
+endif
 
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 

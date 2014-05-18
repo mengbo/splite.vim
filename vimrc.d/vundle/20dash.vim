@@ -1,1 +1,4 @@
-Plugin 'mengbo/vim-dash'
+if exists("g:vundle_install_plugin")
+  Plugin 'mengbo/vim-dash'
+  finish
+endif
