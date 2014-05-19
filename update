@@ -3,6 +3,7 @@
 #rm -rf ~/.vim*
 
 cp -f ./vimrc ~/.vimrc
+cp -f ./gvimrc ~/.gvimrc
 
 mkdir -p ~/.vim/tmp/backup
 mkdir -p ~/.vim/tmp/swap
