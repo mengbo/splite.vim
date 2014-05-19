@@ -1,11 +1,11 @@
-if has('gui_running')
+if has("gui_running")
   " Overriding the default font for Linux
-  if has ("gui_gtk2")
+  if has("gui_gtk2")
     set guifont=Ubuntu\ mono\ 14
   endif
 
   " Overriding the default font for Mac
-  if has ("gui_macvim")
+  if has("gui_macvim")
     set guifont=Monaco:h15
   endif
 
@@ -15,7 +15,7 @@ if has('gui_running')
   source $VIMRUNTIME/menu.vim
 
   " Use tiny toolbar icons for Linux
-  if has ("gui_gtk2")
+  if has("gui_gtk2")
     set toolbariconsize=tiny
   endif
 
@@ -26,12 +26,13 @@ if has('gui_running')
   set guioptions-=r
 
   " Change the window size
-  set lines=32
-  set columns=100
+  "set lines=32
+  "set columns=100
+  winsize 100 32
   
   " Set the input method for Mac
   " Open MacVim --> Preferences disable "Draw marked text inline"
-  if has ("gui_macvim")
+  if has("gui_macvim")
     set noimdisable
     set imsearch=0
     autocmd! InsertLeave * set imdisable | set iminsert=0
