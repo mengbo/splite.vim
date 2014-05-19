@@ -3,5 +3,5 @@ if exists("g:vundle_install_plugin")
   finish
 endif
 
-autocmd BufNewFile,BufReadPost *.less
+autocmd FileType less
       \ setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
