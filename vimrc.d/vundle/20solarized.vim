@@ -9,6 +9,9 @@ if has('gui_running')
   set background=dark
 else
   set background=light
+  if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+  endif
   let g:solarized_termcolors=256
 endif
 colorscheme solarized
