@@ -29,7 +29,6 @@ set lines=32
 set columns=100
 
 " Set the input method for Mac
-" Open MacVim --> Preferences disable "Draw marked text inline"
 if has("gui_macvim")
   set noimdisable
   set imsearch=0
