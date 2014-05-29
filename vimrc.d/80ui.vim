@@ -21,7 +21,7 @@ set hidden
 
 " Only set indent when no other was loaded.
 if !exists("b:did_indent")
-  setlocal smartindent
+  set smartindent
 endif
 
 " When editing a file, always jump to the last known cursor position.
