@@ -14,4 +14,9 @@ else
   endif
   let g:solarized_termcolors=256
 endif
-colorscheme solarized
+
+try
+  colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+    colorscheme default
+endtry
