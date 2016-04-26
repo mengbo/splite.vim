@@ -5,15 +5,15 @@ endif
 
 
 syntax enable
-if has('gui_running')
-  set background=dark
-else
-  set background=light
-  if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-  endif
-  let g:solarized_termcolors=256
+set background=dark
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
 endif
+if $TERM_PROGRAM == 'Apple_Terminal'
+  let g:solarized_termcolors = &t_Co
+  let g:solarized_termtrans = 1
+endif
+let g:solarized_termcolors=256
 
 try
   colorscheme solarized
