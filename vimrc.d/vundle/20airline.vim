@@ -1,5 +1,6 @@
 if exists("g:vundle_install_plugin")
-  Plugin 'bling/vim-airline'
+  Plugin 'vim-airline/vim-airline'
+  Plugin 'vim-airline/vim-airline-themes'
   finish
 endif
 
