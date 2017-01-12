@@ -1,5 +1,5 @@
 if exists("g:vundle_install_plugin")
-  Plugin 'amirh/HTML-AutoCloseTag'
+  Plugin 'alvan/vim-closetag'
   finish
 endif
 
