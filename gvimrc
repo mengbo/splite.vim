@@ -1,6 +1,6 @@
 " Overriding the default font for Linux
 if has("gui_gtk2")
-  set guifont=Ubuntu\ mono\ 14
+  set guifont=Bitstream\ Vera\ Sans\ Mono\ 11
 endif
 
 " Overriding the default font for Mac
