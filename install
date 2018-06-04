@@ -2,14 +2,14 @@
 
 rm -rf ~/.vim*
 
-cp -f ./vimrc ~/.vimrc
-cp -f ./gvimrc ~/.gvimrc
+ln -sf $PWD/vimrc ~/.vimrc
+ln -sf $PWD/gvimrc ~/.gvimrc
 
 mkdir -p ~/.vim/tmp/backup
 mkdir -p ~/.vim/tmp/swap
 
-cp -fR ./vimrc.d ~/.vim/
-cp -fR ./snippets ~/.vim/
+ln -sf $PWD/vimrc.d ~/.vim/vimrc.d
+ln -sf $PWD/snippets ~/.vim/snippets
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall

@@ -7,10 +7,9 @@ endif
 
 " Last window will always have a status line
 set laststatus=2
+
 " Change the theme
-let g:airline_theme = 'solarized'
-" Unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
+let g:airline_theme='solarized'
+
+" For the nice looking powerline symbols to appear
+let g:airline_powerline_fonts=1
