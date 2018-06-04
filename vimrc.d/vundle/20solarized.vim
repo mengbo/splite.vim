@@ -11,8 +11,8 @@ if $COLORTERM == 'gnome-terminal'
 endif
 if $TERM_PROGRAM == 'Apple_Terminal'
   let g:solarized_termcolors = &t_Co
-  let g:solarized_termtrans = 1
 endif
+let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 
 try
