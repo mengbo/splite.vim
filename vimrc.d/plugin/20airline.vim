@@ -1,6 +1,6 @@
-if exists("g:vundle_install_plugin")
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
+if exists("g:install_plugin")
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
   finish
 endif
 
@@ -13,3 +13,6 @@ let g:airline_theme='solarized'
 
 " For the nice looking powerline symbols to appear
 let g:airline_powerline_fonts=1
+
+" Do not draw separators for empty sections
+let g:airline_skip_empty_sections = 1

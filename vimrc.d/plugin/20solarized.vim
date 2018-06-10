@@ -1,5 +1,5 @@
-if exists("g:vundle_install_plugin")
-  Plugin 'altercation/vim-colors-solarized'
+if exists("g:install_plugin")
+  Plug 'altercation/vim-colors-solarized'
   finish
 endif
 
