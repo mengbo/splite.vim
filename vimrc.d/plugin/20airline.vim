@@ -1,3 +1,12 @@
+" Install repatched fonts
+" For macOS:
+" brew tap homebrew/cask-fonts
+" brew cask install font-menlo-for-powerline
+" For Ubuntu:
+" sudo apt-get install powerline
+"
+" For Ubuntu: sudo apt-get install powerline
+"
 if exists("g:install_plugin")
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
