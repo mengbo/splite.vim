@@ -1,18 +1,3 @@
 #!/bin/sh -v
 
-#rm -rf ~/.vim*
-
-cp -f ./vimrc ~/.vimrc
-cp -f ./gvimrc ~/.gvimrc
-
-mkdir -p ~/.vim/tmp/backup
-mkdir -p ~/.vim/tmp/swap
-
-rm -rf ~/.vim/vimrc.d
-cp -fR ./vimrc.d ~/.vim/
-rm -rf ~/.vim/snippets
-cp -fR ./snippets ~/.vim/
-
-#git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-vim +PluginClean +qall
+vim +PlugClean +PlugUpgrade +PlugUpdate +qall
