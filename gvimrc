@@ -1,6 +1,6 @@
 " Overriding the default font for Linux
 if has("gui_gtk2")
-  set guifont=Ubuntu\ mono\ 14
+  set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
 endif
 
 " Overriding the default font for Mac
@@ -19,7 +19,7 @@ if has("gui_gtk2")
 endif
 
 " Disable the toolbar
-"set guioptions-=T
+set guioptions-=T
 
 " Disable the scroll bar
 set guioptions-=r
