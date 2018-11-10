@@ -1,5 +1,5 @@
 " Overriding the default font for Linux
-if has("gui_gtk2")
+if has("gui_gtk")
   set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 14
 endif
 
