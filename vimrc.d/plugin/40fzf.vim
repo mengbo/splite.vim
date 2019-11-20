@@ -14,4 +14,4 @@ if exists("g:install_plugin")
 endif
 
 " Replace CtrlP
-nmap <C-p> :Files<CR>
+nmap <C-p> :FZF --preview=fzf-previewer\ {}<CR>
