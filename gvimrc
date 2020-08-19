@@ -1,6 +1,7 @@
 " Overriding the default font for Linux
 if has("gui_gtk")
-  set guifont=UbuntuMono\ Nerd\ Font\ Regular\ 14
+  "set guifont=UbuntuMono\ Nerd\ Font\ Regular\ 14
+  set guifont=MesloLGS\ Nerd\ Font\ Regular\ 12
 endif
 
 " Overriding the default font for Mac
