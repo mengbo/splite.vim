@@ -5,7 +5,8 @@ endif
 
 " Overriding the default font for Mac
 if has("gui_macvim")
-  set guifont=Menlo\ for\ Powerline:h16
+  "set guifont=Menlo\ for\ Powerline:h16
+  set guifont=MesloLGS\ Nerd\ Font:h16
 endif
 
 " Use the English menus
