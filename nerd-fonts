@@ -1,8 +1,9 @@
 #!/bin/sh -v
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/UbuntuMono.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
+
 
 mkdir -p ~/.local/share/fonts/nerd-fonts
-unzip -d ~/.local/share/fonts/nerd-fonts UbuntuMono.zip
+unzip -d ~/.local/share/fonts/nerd-fonts Meslo.zip
 
-rm UbuntuMono.zip
+rm Meslo.zip
