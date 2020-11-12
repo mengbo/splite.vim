@@ -3,5 +3,5 @@ if exists("g:install_plugin")
   finish
 endif
 
-let g:polyglot_disabled = ['csv']
+"let g:polyglot_disabled = ['csv']
 
