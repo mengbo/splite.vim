@@ -16,6 +16,5 @@ endif
 " Replace CtrlP
 nmap <C-p> :FZF --preview=fzf-previewer\ {}<CR>
 
-" FZF layout
-let g:fzf_layout = { 'window': 
-  \{ 'width': 1.0, 'height': 0.6 , 'xoffset': 0.5, 'yoffset': 0.9, 'border': 'sharp' }}
+" Use a non-popup layout
+let g:fzf_layout = { 'down': '~40%' }
