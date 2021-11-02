@@ -15,14 +15,13 @@ set shortmess+=c
 " If Vim beeps during completion
 set belloff+=ctrlg
 
-" Expand snippets automatically when accept a menu entry with Enter
-inoremap <silent> <expr> <plug><MyCR>
-      \ mucomplete#neosnippet#expand_snippet("\<cr>")
-imap <cr> <plug><MyCR>
+inoremap <silent> <expr> <plug>MyCR
+      \ mucomplete#ultisnips#expand_snippet("\<cr>")
+imap <cr> <plug>MyCR
 
 " Completion chains
 let g:mucomplete#chains = {}
 let g:mucomplete#chains = {
-      \ 'default' : ['path', 'omni', 'nsnp', 'keyn', 'dict', 'uspl'],
+      \ 'default' : ['ulti', 'path', 'omni', 'keyn', 'dict', 'uspl'],
       \ 'vim'     : ['path', 'cmd', 'keyn']
       \ }

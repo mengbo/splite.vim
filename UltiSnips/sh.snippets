@@ -1,0 +1,23 @@
+snippet cat> "cat > << EOF EOF" b
+cat > ${1:filename} << EOF
+${2:content}
+EOF
+endsnippet
+
+snippet cat>> "cat >> << EOF EOF" b
+cat >> ${1:filename} << EOF
+${2:content}
+EOF
+endsnippet
+
+snippet cat>' "cat > << 'EOF' EOF" b
+cat > ${1:filename} << 'EOF'
+${2:content}
+EOF
+endsnippet
+
+snippet cat>>' "cat >> << 'EOF' EOF" b
+cat >> ${1:filename} << 'EOF'
+${2:content}
+EOF
+endsnippet
