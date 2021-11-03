@@ -6,7 +6,7 @@ endif
 
 " Mandatory Vim settings
 set completeopt+=menuone
-set completeopt+=noselect
+set completeopt+=longest
 set completeopt+=noinsert
 
 " Shut off completion messages
