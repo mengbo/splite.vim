@@ -35,3 +35,10 @@ if has("gui_macvim")
   autocmd! InsertEnter * set noimdisable
   autocmd! InsertLeave * set imdisable
 endif
+
+" Set transparency
+if has("gui_macvim")
+  set transparency=2
+elseif has("gui_gtk")
+  autocmd GuiEnter * silent exec "!transset -a 0.98"
+endif
