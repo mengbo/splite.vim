@@ -40,5 +40,8 @@ endif
 if has("gui_macvim")
   set transparency=2
 elseif has("gui_gtk")
-  autocmd GuiEnter * silent exec "!transset -a 0.98"
+  "autocmd GuiEnter * silent exec "!transset -a 0.98"
+  " Transset fails to pick correct window under GNOME
+  " https://gitlab.freedesktop.org/xorg/app/transset/-/issues/1
+  autocmd GuiEnter * silent exec "!xprop -f _NET_WM_WINDOW_OPACITY 32c -set _NET_WM_WINDOW_OPACITY -id " . v:windowid . " $((4294967296 * 0.98))"
 endif
