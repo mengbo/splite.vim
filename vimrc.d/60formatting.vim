@@ -12,3 +12,6 @@ set fileformats=unix,dos
 
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
+
+" Set the 'modeline' option
+set modeline
